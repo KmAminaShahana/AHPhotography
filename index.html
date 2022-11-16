@@ -5,30 +5,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">	
-	<link rel="stylesheet" href="style.css">	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 </head>
 <body>
 	
 <nav class="navbar navbar-expand-lg navbar-light bg-brown">
 	
     <div class="container">
-    <a class="navbar-brand" href="#"> <img src="images/Logoo.jpg"> </a>
+    <a class="navbar-brand" href="#"> <img src="images/Logo.jpg"> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-0 mb-lg-3 ">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
         </li>       
       </ul>
 	  <ul class="navbar-nav m-auto mb-0 mb-lg-3 ">     
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact </a>
@@ -81,33 +82,32 @@
 													<!--------------pictures----------->
 	<section class="placeTiles">
 		<div class="row imgTiles">
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-xs-6"> <!--change this size of medium screen in @media-->
+			<div class="place col-lg-3 col-md-6 col-sm-6 col-6"> <!--change this size of medium screen in @media-->
 				<img src="images/img1.jpg">
 				<div class="layer">
 					<h3> KOLKATA </h3>
 				</div>
 			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-xs-6">
+			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
 				<img src="images/img6.jpg">
 				<div class="layer">
 					<h3> MUMBAI </h3>
 				</div>
 			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-xs-6">
+			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
 				<img src="images/img8.jpg">
 				<div class="layer">
 					<h3> DELHI </h3>
 				</div>
 			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-xs-6">
+			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
 				<img src="images/img11.jpg">
 				<div class="layer">
 					<h3> KERALA </h3>
 				</div>
 			</div>
 		</div>
-    </section>	
-											
+    </section>						
 											
 					<!--------welcome section--------->						
 											
@@ -120,15 +120,15 @@
 			0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 	</section>
 	<section class="wel">
-          	<div class="main">
-				<img src="images/img22.jpg">
+          	<div class="main row">
+				<img src="images/img22.jpg" class="col-lg-6 col-md-6 col-sm-">
 				<div class="wel-text">
-					<h4>WELCOME!</h4>
-					<h5>Oh Hey <span style="color:brown"> There! </span></h5>
-					<p>What’s more friendly that a simple “hello”? This is probably the most common trend that I come across and is simply everywhere in
+					<h4 class="homeText">WELCOME!</h4>
+					<h5 class="homeText">Oh Hey <span style="color:brown"> There! </span></h5><br><br>
+					<p class="homeText">What’s more friendly that a simple “hello”? This is probably the most common trend that I come across and is simply everywhere in
 					designer portfolios these days. The idea is of course to make the site seem that much more alive and friendly, as if it’s a person 
 					welcoming you in. This is often effective when combined with a photo or illustration of the designer so it’s clear who the message is coming from.</p>
-					<button type="button"> Let's Talk</button>
+					<a class="btn contact-btn" class="homeText" href="contact.html"> Let's Talk</a>
 				</div>
 			</div>
 	</section>
@@ -141,66 +141,67 @@
 				</div>
 			</div>
 			<div class="row imgTiles">
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-3 mb-3">
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 					<div class="card">
 						<div class="card-body">
 						<img src="images/img19.jpg" class="card-img-top" alt="...">
 						<h5 class="card-title">LOVE</h5>
 						
-						<a href="#" class="btn btn-primary">View</a>
+						<a href="love.html" class="btn btn-primary">View</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-6 mb-3">
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 					<div class="card">
 						<div class="card-body">
 						<img src="images/img20.jpg" class="card-img-top" alt="...">
 						<h5 class="card-title">JOY</h5>
 						
-						<a href="#" class="btn btn-primary">View</a>
+						<a href="joy.html" class="btn btn-primary">View</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-6 mb-3">
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 					<div class="card">
-						<div class="card-body">
-							<img src="images/img23.jpg" class="card-img-top" alt="...">
-							<h5 class="card-title"><small>COMMITMENT</small></h5>
-							<a href="#" class="btn btn-primary">View</a>
-						</div>
+							<div class="card-body">
+								<img src="images/img23.jpg" class="card-img-top" alt="...">
+								<h5 class="card-title">COMMITMENT</h5>
+								<a href="newborn.html" class="btn btn-primary">View</a>
+							</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-6">
-					<div class="card">
-						<div class="card-body">
-						<img src="images/img24.jpg" class="card-img-top" alt="...">
-						<h5 class="card-title">NATURE</h5>
-						<a href="#" class="btn btn-primary">View</a>
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
+					<a href="nature.html">
+						<div class="card">
+							<div class="card-body">						
+							<img src="images/img24.jpg" class="card-img-top" alt="...">
+							<h5 class="card-title">NATURE</h5>
+							</div>						
 						</div>
-					</div>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-6">
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
 					<div class="card">
 						<div class="card-body">
 						<img src="images/img29.jpg" class="card-img-top" alt="...">
 						<h5 class="card-title">NEW BORN</h5>
-						<a href="#" class="btn btn-primary">View</a>
+						<a href="newborn.html" class="btn btn-primary">View</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-xs-6">
+				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
 					<div class="card">
 						<div class="card-body">
 						<img src="images/img26.jpg" class="card-img-top" alt="...">
 						<h5 class="card-title">TRAVEL</h5>
-						<a href="#" class="btn btn-primary">View</a>
+						<a href="travel.html" class="btn btn-primary">View</a>
 						</div>
 					</div>
 				</div>
 			</div>
 	</section>
 	<footer class="footer">
-		<p>All Rights Reserved. 2022 AH Photography</p>
+		<p>All Rights Reserved. © 2022 AH Photography</p>
 	</footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>

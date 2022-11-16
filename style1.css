@@ -1,0 +1,182 @@
+
+*{
+	word-wrap: break-word;
+}
+a:link 
+{ 
+	text-decoration: none; 
+}
+a:hover{
+	transform: scale(1.2);
+	transform-origin:bottom left;
+	filter: drop-shadow(3px 3px 3px black);
+}
+@media screen and (max-width:1000px)
+{
+    /*.imgTiles{transform: scale(.9);}*/
+}
+@media screen and (max-width:700px)
+{
+    /*.imgTiles{transform: scale(.9);}*/
+	.place{transform: scale(.9);}
+	/*p.bannerText{font-size:-5}
+	h1.bannerText{font-size:-5}*/
+	
+	*{font-size:-5;}
+	.homeText{
+		position:relative;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);}
+}
+
+.navbar-brand
+{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);    
+}
+
+.navbar .navbar-nav .nav-link
+{
+    color:#6A3003;
+    padding:15px;
+    font-weight:bold;
+    font-size:18px;
+}   
+.bannerText
+{
+	/*font-size:20px;*/
+}
+
+.place
+{
+    position:relative;
+    flex-basis:25%;
+    border-radius:10px;
+    padding:30px;
+    
+}
+.place img
+{
+    width:250px;
+    height:350px;
+    border-radius:10px;
+	
+}
+.layer
+{
+    background:transparent;
+    height:350px;
+    width:250px;
+    border-radius:10px;
+    margin-top:30px;
+    left:20;
+    position:absolute;
+    top:0;  
+    transition:1s;
+
+}
+.layer:hover
+{
+    background:rgba(165, 42, 42,0.7);
+}
+
+.layer h3
+{
+    width:100%;
+    font-weight:500;
+    color:white;
+    font-size:26px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    text-align:center;
+	vertical-align:center;
+    opacity:0;
+    transition:1s;
+}
+.layer:hover h3
+{
+    bottom:49%;
+    opacity:1;
+    
+}
+.wel img
+{
+    height:500px;
+    width:400px;
+    padding:30px;    
+}
+.wel-text
+{
+    width:550px;
+}
+.main
+{
+    width:1130px;
+    max-width:95%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+	position: relative;
+}
+.wel-text h4
+{
+    color:brown;
+    font-size:65px;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+.wel-text h5 
+{
+    font-size:45px;
+    color:black;
+}
+.wel-text p
+{
+    font-size:15px;    
+}
+.contact-btn{
+    background-color:brown;
+    color:white;
+    text-decoration:none;
+    border:2px solid transparent;
+    font-weight:bold;
+    padding:13px 20px;
+    border-radius:50px; 
+    transition:0.4s;
+}
+.text-story h6
+{
+    text-align:center;
+    font-weight:bold;
+    font-size:45px;
+    color:brown;
+    padding:40px;
+}
+.story
+{
+    background-color:#F5DEB3;
+    padding:30px;
+}
+.imgTiles
+{
+    padding:30px;
+}
+.card-title 
+{
+    text-align:center;
+    color:brown;
+    padding:20px;
+    
+}
+.footer
+{
+    background-color:brown;
+    padding:10px;
+	text-align:center;
+	vertical-align:center;
+}
