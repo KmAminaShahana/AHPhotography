@@ -166,6 +166,121 @@ button{
     background-color:#F5DEB3;
     padding:30px;
 }
+.love
+{
+	background-color:#E26868;
+	margin:50px;
+	
+}
+.joy
+{
+	background-color:#E14D2A;
+	margin:50px;
+	
+}
+.text-joy
+{
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding:40px;
+	
+}
+.text-joy h6
+{
+	font-weight:bold;
+	color:#FBF2CF;
+	font-size:40px;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+.commitment
+{
+	background-color:#495C83;
+	margin:50px;
+	
+}
+.text-commitment
+{
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding:40px;
+	
+}
+.text-commitment h6
+{
+	font-weight:bold;
+	color:#EAF6F6;
+	font-size:40px;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+.newborn
+{
+	background-color:#495C83;
+	margin:50px;
+	
+}
+.text-newborn
+{
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding:40px;
+	
+}
+.text-newborn h6
+{
+	font-weight:bold;
+	color:#EAF6F6;
+	font-size:40px;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+.travel
+{
+	background-color:#495C83;
+	margin:50px;
+	
+}
+.text-travel
+{
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding:40px;
+	
+}
+.text-travel h6
+{
+	font-weight:bold;
+	color:#EAF6F6;
+	font-size:40px;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+.nature
+{
+	background-color:#495C83;
+	margin:50px;
+	
+}
+.text-nature
+{
+	text-align:center;
+	font-size:20px;
+	color:white;
+	padding:40px;
+	
+}
+.text-nature h6
+{
+	font-weight:bold;
+	color:#EAF6F6;
+	font-size:40px;
+	padding-bottom:30px;
+	padding-top:20px;
 .imgTiles
 {
     padding:30px;
