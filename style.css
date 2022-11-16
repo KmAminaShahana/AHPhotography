@@ -4,9 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media(max-width:700px)
+@media screen and (max-width:700px)
 {
-    font-size:20px;
+    h3.layer{font-size:20px;}
+	div.place{
+		width:200px;
+		height:300px;
+		padding:30px;}
 }
 .navbar-brand img
 {
@@ -31,10 +35,13 @@ nav
     font-weight:bold;
     font-size:18px;
 }   
+.bannerText
+{
+	/*font-size:20px;*/
+}
 .c-item
 {
     height: 500px;
-    
 }
 .c-img
 {
@@ -45,31 +52,33 @@ nav
 {
     height:250px;
 }
-.pp-col
+.place
 {
     position:relative;
     flex-basis:25%;
-    border-radius:20px;
+    border-radius:10px;
     padding:30px;
-    overflow:hidden;
+    
 }
-.pp-col img
+.place img
 {
-    width:300px;
-    height:400px;
-    border-radius:30px;
+    width:250px;
+    height:350px;
+    border-radius:10px;
+	
 }
 .layer
 {
     background:transparent;
-    height:400px;
-    width:300px;
-    border-radius:30px;
+    height:350px;
+    width:250px;
+    border-radius:10px;
     margin-top:30px;
     left:20;
     position:absolute;
     top:0;  
-    transition:0.5s;
+    transition:1s;
+
 }
 .layer:hover
 {
@@ -87,8 +96,9 @@ nav
     transform:translateX(-50%);
     position:absolute;
     text-align:center;
+	vertical-align:center;
     opacity:0;
-    transition:0.5s;
+    transition:1s;
 }
 .layer:hover h3
 {
@@ -156,7 +166,7 @@ button{
     background-color:#F5DEB3;
     padding:30px;
 }
-.row
+.imgTiles
 {
     padding:30px;
 }
@@ -167,7 +177,7 @@ button{
     padding:20px;
     
 }
-.end
+.footer
 {
     background-color:brown;
     padding:40px;
