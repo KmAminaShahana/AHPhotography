@@ -20,6 +20,7 @@ a:link
 {
     /*.imgTiles{transform: scale(.9);}*/
 	.wel-img{display:none;}
+	.img-contact{display:none;}
 }
 @media screen and (max-width:700px)
 {
@@ -34,7 +35,7 @@ a:link
 		top:50%;
 		left:50%;
 		transform: translate(-50%, -50%);*/}
-	.wel-img{display:none;}
+	
 }
 
 .navbar-brand
@@ -256,4 +257,38 @@ section{
 td{
 	padding:10px;
 	align-items:left;
+}
+.select-box{
+	background: #ececec;
+	display: block;
+	cursor: pointer;
+	position : relative;
+	max-width:  20em;
+	margin: 5em auto;
+	width: 100%;
+	position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 40px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+.label {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 15px;
+  border-left: 5px solid #fff;
+}
+.open .label::after {
+   content: "▲";
 }
