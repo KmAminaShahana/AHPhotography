@@ -404,3 +404,10 @@ button{
 	color:white;
 	cursor:pointer;
 }
+.gallery h1
+{
+padding:80px;
+text-align:center;
+font-weight:bold;
+color:brown;
+}
