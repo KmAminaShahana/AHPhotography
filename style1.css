@@ -6,10 +6,12 @@ a:link
 { 
 	text-decoration: none; 
 }
-i,h5{
+i,h5,article{
 	display:inline-block;
 }
-
+.div-pad30{
+  padding: 30px;
+}
 .scale-link:hover{
 	transform: scale(1.2,1.2);
 	transform-origin:middle center;
@@ -215,6 +217,22 @@ section{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.mail-contact{
+  background-color: #eaf5b3;
+  
+}
+.mail-cont{
+  width: 70px;
+}
+.content-mail{
+  align: center;
+}
+.mail{
+  background-color: #f5fbef;
+}
+.whatsapp{
+  background-color: #d3f5b3;
+}
 .contact-main{
 	width:1130px;
 	max-width:95%;
@@ -236,6 +254,7 @@ section{
 	display:inline;
 	align-items:center;
 	vertical-align:center;
+  
 }
 .blink-text{
 	animation: blinker 2s infinite;
