@@ -88,7 +88,7 @@
 										ut. Netus et malesuada fames ac. </p>
 								</td>
 							</tr>
-							<tr>
+							<tr class="socials">
 								<td align="center">
 									<a href="#"><img src="images/instagram.png" class="icon scale-link" alt="Instagram Icon"></a>
 									<a href="#"><img src="images/facebook.png" class="icon scale-link" alt="Facebook Icon"></a>
@@ -100,9 +100,7 @@
 						</table>
 					</div>
 				</div>
-				<div style="padding: 40px;">
-
-				</div>
+				<div style="padding: 40px;"></div>
 				<div class="row" id="booking_form">
 					<div class="booking-img col-lg-5 col-md-12 col-sm-12 col-12">
 						<img src="images/img55.jpg" alt="Picture of a mountain covered in clouds" class="book-img">
@@ -148,7 +146,7 @@
 									</td>
 								</tr>
 								<tr>									
-									<td class="form-label">Duration*
+									<td class="form-label">Duration
 									<td>
 										<select class="select-box entry" name="duration" id="duration" class="entry">
 											<option value=" " selected disabled>Select Duration</option>
@@ -161,7 +159,44 @@
 										<i class="far fa-check-circle success-icon"></i>
 										<i class="fas fa-exclamation-circle failure-icon"></i>
 										<div class="error"></div>
+									</td>						
+								</tr>
+								<tr>
+									<td class="form-label">Occasion
+									<td>
+										<select name="occasion" class="entry select-box" data-mate-select="active">
+											<option value=" " selected disabled>Select Occasion</option>
+											
+											<optgroup label="Personal">Personal
+												<option value="Wedding">Wedding
+												<option value="Birthday">Birthday
+												<option value="Anniversary">Anniversary
+											</optgroup>
+											<optgroup label="Business/Commercial">
+												<option value="Magazine">Magazine Photoshoot
+												<option value="Product Photoshoot">Product Photoshoot
+												<option value="Conference">Conference
+												<option value="Event">Other Events
+											</optgroup>
+										</select>
 									</td>									
+								</tr>
+								<tr>
+									<td class="form-label">Location
+									<td>
+										<select class="entry select-box" name="location" onchange="" onclick="return false;" id="location" data-mate-select="active">
+											<option value=" " selected disabled>Select Location</option>
+											<option value="Chennai">Chennai
+											<option value="Podicherry">Podicherry
+											<option value="Bangalore">Bangalore
+											<option value="Hyderabad">Hyderabad
+											<option value="Goa">Goa
+										</select>
+									</td>										
+								</tr>
+								<tr>
+									<td class="form-label" style="vertical-align:top;">Detailed Info*
+									<td ><textarea cols="24" rows="7" placeholder="Enter additional Details you want us to know..."></textarea></td>
 								</tr>
 								<tr>
 									<td align="left">
