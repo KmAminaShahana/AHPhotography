@@ -10,6 +10,7 @@ function checkPhone(){
 }
 
 $(document).ready(function(){
+	
 			
 	var checkout = $('#date-picker').datepicker({
 		beforeShowDay: function(date) {

@@ -156,24 +156,24 @@ button{
 	background-color:#F5DEB3;
 	padding:30px;
 }
+.card-body{
+	text-align: center;
+}
+.card-title{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
 .row
 {
 	padding:30px;
 }
-.card-title 
-{
-	text-align:center;
-	color:brown;
-	padding:20px;
-	
-}
+
 .end
 {
 	background-color:brown;
 	padding:40px;
 }
-
-
 
 .row {
   display: flex;

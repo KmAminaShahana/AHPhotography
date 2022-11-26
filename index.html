@@ -4,211 +4,261 @@
 	<title>AHPhotography</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">	
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.1/motion-ui.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.1/motion-ui.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style1.css">
 </head>
 <body>
-	
-<nav class="navbar navbar-expand-lg navbar-light bg-brown">
-	
-    <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/Logo.jpg"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-0 mb-lg-3 ">
-        <li class="nav-item">
-          <a class="nav-link scale-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scale-link" href="gallery.html">Gallery</a>
-        </li>       
-      </ul>
-	  <ul class="navbar-nav m-auto mb-0 mb-lg-3 ">     
-        </li>
-		<li class="nav-item">
-          <a class="nav-link scale-link" href="aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scale-link" href="contact.html">Contact </a>
-        </li>
-      </ul>     
-    </div>
-    </div>
-	</nav>
-	<div class="row">
-		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
+	<header>
+		<div>
+			<center>
+				<a href="index.html"><img src="images/Logo.jpg" class="logo-menu"></a>
+			</center>			
+		</div>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			
-			<div class="carousel-inner ">
-				<div class="carousel-item active c-item">
-					<img src="images/Banner3.jpg" class="d-block w-100 c-img" alt="sld1">
-					<div class="carousel-caption top-0 mt-4 d-none d-md-block">
-						<p class="mt-4 fs-3 text-uppercase bannerText">Capture your dream</p>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Stories
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Love</a>
+					<a class="dropdown-item" href="#">Joy</a>
+				  </div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="aboutus.html">About us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			  </ul>
+			</div>
+		</nav>
+
+	
+	</header>
+	<main>
+		<div class="row">
+			<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				
+				<div class="carousel-inner ">
+					<div class="carousel-item active c-item">
+						<img src="images/Banner3.jpg" class="d-block w-100 c-img" alt="sld1">
+						<div class="carousel-caption top-0 mt-4 ">
+							<p class="mt-4 fs-3 text-uppercase bannerText">Capture your dream</p>
+							<h1 class="display-1 fw-bolder text-capitalize bannerText">The Best Moments!</h1>
+						</div>
+					</div>
+					<div class="carousel-item c-item">
+						<img src="images/Banner2.jpg" class="d-block w-100 c-img" alt="sld2">
+						<div class="carousel-caption top-0 mt-4 ">
+						<p class="mt-4 fs-3 text-uppercase bannerText">Capture what you love</p>
 						<h1 class="display-1 fw-bolder text-capitalize bannerText">The Best Moments!</h1>
+						</div>
+					</div>
+					<div class="carousel-item c-item">
+						<img src="images/Banner1.jpg" class="d-block w-100 c-img" alt="sld3">
+						<div class="carousel-caption top-0 mt-4 ">
+						<p class="mt-4 fs-3 text-uppercase bannerText">Capture the beauty</p>
+						<h1 class="display-1 fw-bolder text-capitalize bannerText">The Best Moments!</h1>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item c-item">
-					<img src="images/Banner2.jpg" class="d-block w-100 c-img" alt="sld2">
-					<div class="carousel-caption top-0 mt-4 d-none d-md-block">
-					<p class="mt-4 fs-3 text-uppercase bannerText">Capture what you love</p>
-					<h1 class="display-1 fw-bolder text-capitalize bannerText">The Best Moments!</h1>
-					</div>
-				</div>
-				<div class="carousel-item c-item">
-					<img src="images/Banner1.jpg" class="d-block w-100 c-img" alt="sld3">
-					<div class="carousel-caption top-0 mt-4 d-none d-md-block">
-					<p class="mt-4 fs-3 text-uppercase bannerText">Capture the beauty</p>
-					<h1 class="display-1 fw-bolder text-capitalize bannerText">The Best Moments!</h1>
-					</div>
-				</div>
-			</div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		  </button>
-		</div>
-	</div>
-													<!--------------pictures----------->
-	<section class="placeTiles">
-		<div class="row imgTiles">
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-6"> <!--change this size of medium screen in @media-->
-				<img src="images/img1.jpg">
-				<div class="layer">
-					<h3> KOLKATA </h3>
-				</div>
-			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
-				<img src="images/img6.jpg">
-				<div class="layer">
-					<h3> MUMBAI </h3>
-				</div>
-			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
-				<img src="images/img8.jpg">
-				<div class="layer">
-					<h3> DELHI </h3>
-				</div>
-			</div>
-			<div class="place col-lg-3 col-md-6 col-sm-6 col-6">
-				<img src="images/img11.jpg">
-				<div class="layer">
-					<h3> KERALA </h3>
-				</div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
 			</div>
 		</div>
-    </section>						
+					<!-- ------------PLACES TILES------------- -->
+
+		<section class="placeTiles">
+			<div class="row imgTiles">
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img1.jpg">
+					<div class="layer">
+						<h3> KOLKATA </h3>
+					</div>
+				</div>
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img6.jpg">
+					<div class="layer">
+						<h3> MUMBAI </h3>
+					</div>
+				</div>
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img8.jpg">
+					<div class="layer">
+						<h3> DELHI </h3>
+					</div>
+				</div>
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img11.jpg">
+					<div class="layer">
+						<h3> KERALA </h3>
+					</div>
+				</div>
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img6.jpg">
+					<div class="layer">
+						<h3> CHENNAI </h3>
+					</div>
+				</div>
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
+					<img src="images/img8.jpg">
+					<div class="layer">
+						<h3> DELHI </h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--------welcome section--------->						
 											
-					<!--------welcome section--------->						
 											
-											
-	<section class="svg">	
+		<section class="svg">	
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b04238" fill-opacity="1" d="M0,128L30,149.3C60,171,120,
 			213,180,202.7C240,192,300,128,360,112C420,96,480,128,540,138.7C600,149,660,139,720,122.7C780,107,840,85,900,117.3C960,149,
 			1020,235,1080,261.3C1140,288,1200,256,1260,213.3C1320,171,1380,117,1410,90.7L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,
 			0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
-	</section>	
-	
-	<section class="welcome">
-          	<div class="main row">
-				<img src="images/img22.jpg" class="wel-img col-lg-6 col-md-6 col-sm-6">
-				<div class="wel-text col-lg-6 col-md-6 col-sm-6">
-					<h4 class="homeText">WELCOME!</h4>
-					<h5 class="homeText">Oh Hey <span style="color:brown"> There! </span></h5><br><br>
-					<p class="homeText pad-5">What’s more friendly that a simple “hello”? This is probably the most common trend that I come across and is simply everywhere in
-					designer portfolios these days. The idea is of course to make the site seem that much more alive and friendly, as if it’s a person 
-					welcoming you in. This is often effective when combined with a photo or illustration of the designer so it’s clear who the message is coming from.</p>
-					<a class="btn contact-btn scale-link" class="homeText" href="contact.html"> Let's Talk</a>
-				</div>
-			</div>
-	</section>
-<!------------------stories---------------->
+		</section>	
 
-	<section class="story">
+		<section class="welcome">
+				<div class="main row">
+					<img src="images/img22.jpg" class="wel-img col-lg-6 col-md-6 col-sm-6">
+					<div class="wel-text col-lg-6 col-md-6 col-sm-6">
+						<h4 class="homeText">WELCOME!</h4>
+						<h5 class="homeText">Oh Hey <span style="color:brown"> There! </span></h5><br><br>
+						<p class="homeText pad-5">What’s more friendly that a simple “hello”? This is probably the most common trend that I come across and is simply everywhere in
+						designer portfolios these days. The idea is of course to make the site seem that much more alive and friendly, as if it’s a person 
+						welcoming you in. This is often effective when combined with a photo or illustration of the designer so it’s clear who the message is coming from.</p>
+						<a class="btn contact-btn scale-link" class="homeText" href="contact.html"> Let's Talk</a>
+					</div>
+				</div>
+		</section>
+		<!------------------stories---------------->
+
+		<section class="story">
 			<div class="container">
 				<div class="text-story">
 					<h6>Our Stories</h6>
 				</div>
-			</div>
-			<div class="row imgTiles">
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
-					<a href="love.html" class="scale-link">
+				<div class="row">
+					<a href="love.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img19.jpg" class="card-img-top" alt="love">
-							<h5 class="card-title">LOVE</h5>
+							<div class="card-body">	
+								<img src="images/img19.jpg" class="card-img-top" alt="love">
+								<h5 class="card-title">LOVE</h5>
 							</div>						
 						</div>
 					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
-					<a href="joy.html" class="scale-link">
+					<a href="joy.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img20.jpg" class="card-img-top" alt="joy">
-							<h5 class="card-title">JOY</h5>
+							<div class="card-body">	
+								<img src="images/img20.jpg" class="card-img-top" alt="love">
+								<h5 class="card-title">JOY</h5>
 							</div>						
 						</div>
 					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
-					<a href="commitment.html" class="scale-link">
+					<a href="commitment.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img23.jpg" class="card-img-top" alt="commitment">
-							<h5 class="card-title">COMMITMENT</h5>
+							<div class="card-body">	
+								<img src="images/img23.jpg" class="card-img-top" alt="love">
+								<h5 class="card-title">COMMITMENT</h5>
 							</div>						
 						</div>
 					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
-					<a href="nature.html" class="scale-link">
+					<a href="nature.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img24.jpg" class="card-img-top" alt="...">
-							<h5 class="card-title">NATURE</h5>
+							<div class="card-body">	
+								<img src="images/img24.jpg" class="card-img-top" alt="love">
+								<h5 class="card-title">NATURE</h5>
 							</div>						
 						</div>
 					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
-					<a href="newborn.html" class="scale-link">
+					<a href="newborn.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img29.jpg" class="card-img-top" alt="new born">
-							<h5 class="card-title">NEW BORN</h5>
+							<div class="card-body">	
+								<img src="images/img29.jpg" class="card-img-top" alt="new born">
+								<h5 class="card-title">NEW BORN</h5>
 							</div>						
 						</div>
 					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-2 col-6">
-					<a href="travel.html" class="scale-link">
+					<a href="travel.html" class="scale-link col-sm-6 col-md-4 col-lg-2 col-6 mb-3">
 						<div class="card">
-							<div class="card-body">						
-							<img src="images/img26.jpg" class="card-img-top" alt="travel">
-							<h5 class="card-title">TRAVEL</h5>
+							<div class="card-body">	
+								<img src="images/img26.jpg" class="card-img-top" alt="travel">
+								<h5 class="card-title">TRAVEL</h5>
 							</div>						
 						</div>
 					</a>
 				</div>
 			</div>
-	</section>
+		</section>
+	</main>
 	<footer class="footer">
-		<p>All Rights Reserved. © 2022 AH Photography</p>
-	</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<img src="images/logofooter.png" class="logo-footer">
+				<table 	class="footer-details">
+					<tr class="footer-details">
+						<td><img src="images/location.png" class="icon-footer"></td>
+						<td>Address</td>
+					</tr>
+					<tr class="footer-details">
+						<td><img src="images/phonecall.png" class="icon-footer"></td>
+						<td>+91</td>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<p>© 2022 AH Photography. All Rights Reserved. </p>
+			<p>Powered by GitHub Pages</p>
+		</div>
 
-</body>
+
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(document).foundation();
+		});
+	</script>
+	</body>
 </html>
