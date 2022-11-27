@@ -13,8 +13,6 @@
 {
     /*.imgTiles{transform: scale(.9);}
 	.place{transform: scale(.9);}*/
-	
-
 	.homeText{
     opacity: 1;
   }
@@ -89,8 +87,8 @@ section{
   word-wrap: break-word;
 }
 .imgTiles{
-  overflow-y: hidden; /* Hide horizontal scrollbar */
-  overflow-x: scroll;
+  /*overflow-y: hidden;  Hide horizontal scrollbar 
+  overflow-x: scroll;*/
   align-items:center;
 }
 .place
@@ -217,35 +215,47 @@ section{
 .footer
 {
   background-color:brown;
-  color: white;
-  padding:10px;
-	
+  color: #ece6db;
+  padding:4%;	
 	vertical-align:center;
 }
 .logo-footer{
-  width: 40%;
+  width: 50%;
 }
 .icon-footer{
-  width: 15%;
+  width: 30px;
 }
 tbody{
   border: 0px;
 }
-.footer-details,
-.footer-details:nth-of-type(even),
-.footer-details:nth-of-type(odd){
-  background-color: brown;
-  border: 0px solid;
-  text-align: left;  
-}
-.footer-details td{
+.footer-details{
   text-align: left;
   width: 100px;
 }
+.footer1, .footer2, .footer3{
+  padding: 30px;
+}
+.quick-link{
+  color: white;
+}
+.quick-link:hover{
+  color: #EEC67D;
+}
+.title-footer{
+  font-weight: bold;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
 .banner-contact
 {
-	height:400px;
+	height:30%;
+  position: relative;
 }
+
 .banner-text{
 	color:white;
 	/*font-weight:bold;*/
@@ -254,6 +264,9 @@ tbody{
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.contact-body{
+  position: relative;
 }
 .mail-whatsapp{
   background-color:  rgba(232, 245, 179, 0.5);
