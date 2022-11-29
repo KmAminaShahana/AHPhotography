@@ -1,17 +1,8 @@
-function checkPhone(){
-	phonenum=document.getElementById("phone").value
-	console.log(phonenum.isInteger)
-	if(phonenum.isInteger) {
-		return true;
-	}
-	else{
-		return false;
-	}
-}
+
 
 $(document).ready(function(){
 	
-			
+	
 	var checkout = $('#date-picker').datepicker({
 		beforeShowDay: function(date) {
 		  if (!checkin.datepicker("getDate").valueOf()) {
@@ -28,14 +19,6 @@ $(document).ready(function(){
 		$(".reset-form").click(function () {
 			window.alert("Form is reset successfully");
 		});
-
-		
-		const phoneInputField = document.querySelector("#phone");
-		const phoneInput = window.intlTelInput(phoneInputField, {
-		  utilsScript:
-			"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-		});
-	  
 			
 			/*
 			$(".submit-form").click(function () {
@@ -44,85 +27,45 @@ $(document).ready(function(){
 			*/
 		
 			
-			let id = (id) => document.getElementById(id);
-			let form = id("contact-form"),
-				uname = id("uname"),
-				email = id("email"),
-				phone = id("phone"),
-				//date = id("date"),
-				duration = id("duration"),
-
-			  errorMsg = document.getElementsByClassName("error"),
-			  successIcon = document.getElementsByClassName("success-icon"),
-			  failureIcon = document.getElementsByClassName("failure-icon");
 			
 			// Adding the submit event Listener
 
-			form.addEventListener("submit", (e) => {
-			  e.preventDefault();
-			  engine(uname, 0, "Name cannot be blank");
-			  engine(email, 1, "Email cannot be blank");
-			  engine(phone, 2, "Phone Number cannot be blank");
-			  //engine(date, 3, "Date cannot be blank");
-			  engine(duration,4,"Duration cannot be blank");
+			function validateForm(){
+				
+				var name = document.forms.RegForm.Name.value;
+				var email = document.forms.RegForm.Email.value;
+				var phone = document.forms.RegForm.Phone.value;
+				var details = document.forms.RegForm.Details.value;
+				var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+				var regPhone=/^\d{10}$/;									 // Javascript reGex for Phone Number validation.
+				var regName = /\d+$/g;								 // Javascript reGex for Name validation
 
-			function engine(id, serial, message) {
-					if (id.value.trim() === "") {
-						errorMsg[serial].innerHTML = message;
-						id.style.border = "2px solid red";
-
-						// icons
-						failureIcon[serial].style.opacity = "1";
-						successIcon[serial].style.opacity = "0";
-					} else {
-						if (id==email){
-							let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-							let user_mail = $("#email").val();
-							if(user_mail.match(res)) {
-								errorMsg[serial].innerHTML="";
-								id.style.border = "2px solid green";
-								
-								failureIcon[serial].style.opacity = "0";
-								successIcon[serial].style.opacity = "1";
-							}
-							else {
-								errorMsg[serial].innerHTML = "Enter valid email";
-								id.style.border = "2px solid red";
-								
-								failureIcon[serial].style.opacity = "1";
-								successIcon[serial].style.opacity = "0";
-							}
-						}
-						else if(id==phone){
-							let num = parseInt(id.value.trim());
-							if(num.toString().length != 10 || Number.isInteger(num)==false){
-								errorMsg[serial].innerHTML = "Enter valid Phone Number";
-								id.style.border = "2px solid red";
-								
-								failureIcon[serial].style.opacity = "1";
-								successIcon[serial].style.opacity = "0";
-							}
-							else{
-								errorMsg[serial].innerHTML="";
-								id.style.border = "2px solid green";
-								
-								failureIcon[serial].style.opacity = "0";
-								successIcon[serial].style.opacity = "1";
-							}
-						}
-						else{
-							errorMsg[serial].innerHTML = "";
-							id.style.border = "2px solid green";
-
-						// icons
-							failureIcon[serial].style.opacity = "0";
-							successIcon[serial].style.opacity = "1";
-						}
-						
-					}
+				if (name == "" || regName.test(name)) {
+					window.alert("Please enter your name properly.");
+					name.focus();
+					return false;
 				}
 
-			});
+				if (details == "") {
+					window.alert("Please enter your details");
+					address.focus();
+					return false;
+				}
+				
+				if (email == "" || !regEmail.test(email)) {
+					window.alert("Please enter a valid e-mail address.");
+					email.focus();
+					return false;
+				}
+				
+				if (phone == "" || !regPhone.test(phone) || phone.length <10) {
+					alert("Please enter valid phone number.");
+					phone.focus();
+					return false;
+				}
 
+				return true;
+
+			}
 			
 		});

@@ -4,26 +4,34 @@
   word-break:normal;
   font-family: 'Montserrat', sans-serif;
 }
-h1{
+.playfair{
   font-family: 'Playfair Display', serif;
 }
-.nav-link{
-  
+
+.nav-link{  
   text-transform: uppercase;
 }
 @media screen and (max-width:1100px)
 {
 	.wel-img{display:none;}
 	.booking-img{display:none;}
+  main, footer{
+    overflow:auto;
+  }
 }
 @media screen and (max-width:700px)
 {
-  .bannerText{font-size: 65px;}
+  .bannerText{font-size: 55px;}
     /*.imgTiles{transform: scale(.9);}
 	.place{transform: scale(.9);}*/
 	.homeText{
-    opacity: 1;
+    font-size: 20px;
   }
+  .place{
+    float: left;
+    right: -7%;
+  }
+  
 }
 .menu .menubar{
   background-color: #f1f1f1;
@@ -55,7 +63,9 @@ i,h5,article{
 #carouselExampleIndicators{
   z-index: 999;
 }
-
+section, main, footer{
+  overflow: hidden;
+}
 .logo-menu{
   width: 20%;
 }
@@ -88,33 +98,32 @@ section{
 	padding-top:10px;
 	padding-bottom:20px;
 }
-.bannerText
-{
-	
-}
 .imgTiles{
   /*overflow-y: hidden;  Hide horizontal scrollbar 
   overflow-x: scroll;*/
   align-items:center;
 }
+
 .place
 {
   position:relative;
   flex-basis: auto;
   padding:20px;
   align-items: center;
-  
+  overflow: hidden;
 }
-.place img
+.place-img
 {
   max-height:450px;
   max-width:350px;
   min-width:350px;
   border-radius:10px;	
+  
   /*position: absolute;*/
 }
 .layer
 {
+  
     background:transparent;
     height:450px;
     width:350px;
@@ -123,7 +132,7 @@ section{
     left:10;
     position:absolute;
     top:0;
-    transition:1s;
+    transition:1s ease-in-out;
 
 }
 .layer:hover
@@ -136,7 +145,7 @@ section{
   width:100%;
   font-weight:500;
   color:white;
-  font-size:26px;
+  font-size:30px;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
@@ -151,7 +160,10 @@ section{
   bottom:49%;
   opacity:1;
 }
-.welcome img
+.svg{
+  overflow: hidden;
+}
+.wel-img
 {
     height:500px;
     width:400px;
@@ -163,6 +175,7 @@ section{
 }
 .homeText{
 	padding-bottom:10px;
+
 }
 .main
 {
@@ -174,19 +187,19 @@ section{
     justify-content:space-around;
 	position: relative;
 }
-.wel-text h4
+.wel-text1
 {
     color:brown;
-    font-size:65px;
+    font-size:60px !important;
     font-weight:bold;
     padding-bottom:10px;
 }
-.wel-text h5 
+.wel-text2 
 {
-    font-size:45px;
+    font-size:43px !important;
     color:black;
 }
-.wel-text p
+.wel-textp
 {
     font-size:15px;    
 }
@@ -197,8 +210,15 @@ section{
     border:2px solid transparent;
     font-weight:bold;
     padding:13px 20px;
-    border-radius:50px; 
+    border-radius:60px; 
     transition:0.4s;
+}
+.contact-btn:hover{
+  transform: scale(1.2,1.2);
+  color:#F5DEB3;
+	transform-origin:middle center;
+	filter: drop-shadow(2px 2px 3px gray);
+	transition:0.6s ease-in-out;	
 }
 .text-story h6
 {
@@ -217,6 +237,8 @@ section{
 {
   text-align:center;
   color:brown;    
+  font-weight: bold;
+  font-size: 18px;
 }
 .footer
 {
@@ -256,31 +278,48 @@ tbody{
 .float-right{
   float: right;
 }
+
+/* ------CONTACT PAGE------- */
 .banner-contact
 {
 	height:30%;
   position: relative;
 }
-
+.bannerText{
+  overflow: hidden;
+}
 .banner-text{
 	color:white;
 	/*font-weight:bold;*/
-	font-size:50px;
+	font-size:55px;
+  font-weight: bolder;
 	position: absolute;
 	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.wa-mail{
+  position: absolute;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .contact-body{
   position: relative;
 }
+.cont-text{
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+}
 .mail-whatsapp{
-  background-color:  rgba(232, 245, 179, 0.5);
+  /*background-color:  rgba(245, 222, 179,.3);*/
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .mail-icon{
   width: 70px;
+  display: inline-block;
 }
 .content-mail{
   box-align: center;
@@ -288,10 +327,11 @@ tbody{
   vertical-align: middle;
 }
 .mail{
-  background-color: #ffffff;
+  background-color: rgba(245, 179, 179,.5);
+  
 }
 .whatsapp{
-  background-color: #d3f5b3;
+  background-color: rgba(211, 245, 179,.5);
   padding: 30px;
 }
 .contact-main{
@@ -303,8 +343,9 @@ tbody{
 	justify-content:space-around;
 }
 .icon{
-	width:50px;
+	width:60px;
 	padding:10px;
+  
 }
 .book-img{
 	width:100%;
@@ -325,28 +366,51 @@ tbody{
 		color: brown;
 		}
 }
-
+/*-------FORM-------*/
+@media screen and (max-width:700px)
+{
+  .entry, textarea{
+    width:75%;
+  }
+}
 .booking-form{
   margin:0 auto;
-	background-color:  #efefef;
+	background-color: rgba(245, 222, 179,.9);
 	vertical-align:center;
 	font-size:20px;
+  overflow-wrap: normal;
+  
 }
 .book{
-	padding:10px;	
+	padding:10px;
+}
+.book-title{
+  font-size: 40px;
+  font-weight: bold;
+  color: #7A1F1F;
+}
+.entry, textarea{
+  width:90%;
 }
 .entry{
 	height:70px;
-	width:350px; 
 }
-
 td{
 	padding:10px;
 	align-items:left;
 }
+.tr-form{
+  max-width: 90px;
+}
 .form-label{
+  color: #7A1F1F;
 	text-align: right;
 	text-transform: uppercase;
+  vertical-align:top;
+  
+}
+.entry::placeholder{
+  font-family: 'Montserrat', sans-serif;
 }
 textarea{
 	resize:none;
@@ -357,15 +421,14 @@ textarea{
   top:20px;
   right: 2%;
   font-size: 16px;
-    height: 22px;
+  height: 22px;
   transition: all 275ms;
 }
 
 .select-box {
   position: relative;
   float: left;
-  max-width: 350px;
-  width: 350px;
+  
   height:70px;
   font-family: 'Roboto';
   color: #777;
@@ -375,13 +438,13 @@ textarea{
   border-radius: 3px;
   transition: all 3s ease-in-out;
 
-  select{
+  /*select{
 	position: absolute;
 	overflow: hidden;
 	height: 0px;
 	opacity: 0;  
 	z-index: -1;
-  }
+  }*/
 }
 
 .cont_list_select_mate {
@@ -404,9 +467,9 @@ textarea{
   margin-top: 0px;
   border-radius: 0px 0px 3px 3px;
   box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
-  transition: all 375ms ease-in-out;
+  transition: all 1s ease-in-out;
 
-	& li{
+	/*li{
 		position: relative;
 		float: left;
 		width: 96%;
@@ -418,20 +481,13 @@ textarea{
 		transition: all 275ms ease-in-out;
 		display: block;
 		cursor:pointer;
-		
-		&:last-child {
-			border-radius: 3px;
-			border-bottom:0px; 
-        }
-        &:hover {
-			background-color: brown;
-		} 
-    }
+  }*/
+}
 
    .active {
 	background-color: #EEEEEE;
    }
-}
+
 .select-option{
     padding: 20px 2%;
     width: 96%;
@@ -440,23 +496,25 @@ textarea{
     cursor: pointer;
 }
 .submit-form{
+  font-weight: bold;
 	width:120px;
 	height:50px;
   border-radius:3px;
   padding: 0px;
-  border: 2px solid #7A1F1F;
-	background-color:white;
-	color:#7A1F1F;
+  background-color:#7A1F1F;
+	color:white;  
 }
 .submit-form:hover{
-	background-color:#7A1F1F;
-	color:white;
+	
+	background-color:rgba(165, 42, 42,.8);
   font-weight: bolder;
   border: 0px;
+  
 }
 .reset-form{
 	width:100px;
 	height:40px;
+  
 	border-radius:3px;
   border: 2px solid black;
 	background-color:white;
@@ -481,7 +539,7 @@ input,textarea,select{
 #date-picker{
   font-family: FontAwesome,"Open Sans";
 }
-/* FORM VALIDATION*/
+/* -------FORM VALIDATION--------*/
 .success-icon,
 .failure-icon {
   right: 0;
@@ -501,6 +559,7 @@ input,textarea,select{
   font-size: 14.5px;
   margin-top: 5px;
 }
+/* ---------ABOUT US PAGE----------*/
 .about-img{
   width: 100%;
   border-radius: 5px;
