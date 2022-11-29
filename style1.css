@@ -4,6 +4,13 @@
   word-break:normal;
   font-family: 'Montserrat', sans-serif;
 }
+h1{
+  font-family: 'Playfair Display', serif;
+}
+.nav-link{
+  
+  text-transform: uppercase;
+}
 @media screen and (max-width:1100px)
 {
 	.wel-img{display:none;}
@@ -11,6 +18,7 @@
 }
 @media screen and (max-width:700px)
 {
+  .bannerText{font-size: 65px;}
     /*.imgTiles{transform: scale(.9);}
 	.place{transform: scale(.9);}*/
 	.homeText{
@@ -82,9 +90,7 @@ section{
 }
 .bannerText
 {
-	/*font-size:20px;*/
-  opacity: 1;
-  word-wrap: break-word;
+	
 }
 .imgTiles{
   /*overflow-y: hidden;  Hide horizontal scrollbar 
