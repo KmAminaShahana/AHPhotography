@@ -29,7 +29,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
 		
 	</head>
-	<body>
+	<body style="overflow: auto;">
 		<header>
 			<div>
 				<center>
@@ -79,7 +79,7 @@
 				<div class="banner-contact">
 					<img src="images/img51.jpg" class="img-fluid " alt="img">
 					
-					<h1 class="banner-text">CONTACT</h1>	
+					<h1 class="banner-text">Contact</h1>	
 					<!--
 					<table class="wa-mail">
 						<tr>
@@ -106,26 +106,29 @@
 				<div class="row contact-body">
 					<div class="mail-whatsapp col-lg-6 col-md-12 col-sm-12 col-12">
 						<table class="content-mail">
-							<tr>
-								<td class="cont-text">
+							<tr >
+								<td class="cont-text" colspan="2">
 									<h4><a href="#booking_form" class="blink-text scale-link">Book us now!!</a></h4>
 								</td>
 							</tr>
+							<tr>
+								<td></td><td></td>
+							</tr>
 							<tr class="whatsapp">
-								<td><img src="images/whatsapp.png" class="mail-icon"></td>
+								<td class="cont-text"><img src="images/whatsapp.png" class="mail-icon"></td>
 								<td class="cont-text">+91 9876543210, +91 8967452301</td>
 							</tr>
 							<tr>
-								<td></td>
+								<td></td><td></td>
 							</tr>
 							<tr class="mail">
-								<td><img src="images/gmail.png" class="mail-icon"></td>
+								<td class="cont-text"><img src="images/gmail.png" class="mail-icon"></td>
 								<td class="cont-text">ah.photography@gmail.com</td>
 							</tr>							
 						</table>
 					</div>
 					<div class="socials col-lg-6 col-md-12 col-sm-12 col-12">
-						<table class="content-mail">
+						<table class="content-social">
 							<tr>
 								<td align="center">
 									<p><span style="font-size: larger;font-weight: bold;">We're truly happy you are here!</span>
@@ -162,7 +165,7 @@
 						<img src="images/img55.jpg" alt="Picture of a mountain covered in clouds" class="book-img">
 					</div>
 					<div class="booking-form col-lg-7 col-md-12 col-sm-12 col-12">
-						<form action="#" id="contact-form" name="RegForm" onsubmit="return validateForm()">
+						<form action="#" id="contact-form" name="RegForm" >
 							<table class="content-mail">
 								<tr  class="tr-form">
 									<td scope="col" colspan="2" align="center"><h3 class="book-title">BOOK US NOW!</h3></td>
@@ -171,27 +174,18 @@
 									<td class="form-label">Name*
 
 									<td><input type="text" name="Uname" id="uname" class="entry" placeholder="Enter your Name"></input>
-										<i class="far fa-check-circle success-icon"></i>
-										<i class="fas fa-exclamation-circle failure-icon"></i>
-										<div class="error"></div>
 									</td>		
 								</tr>
 								<tr class="tr-form" >
 									<td class="form-label">E-mail*
 									<td><input type="text" id="email" name="Email" class="entry" placeholder="Enter your E-mail"></input>
-										<i class="far fa-check-circle success-icon"></i>
-										<i class="fas fa-exclamation-circle failure-icon"></i>
-										<div class="error"></div>
 									</td>
 								</tr>
 								<tr>
 									<td class="form-label">Phone Number*
-									<td ><input type="tel"  onkeydown="checkPhone()" 
-										id="phone" name="Phone" class="entry"  placeholder="Enter your Phone Number"></input>
-										<i class="far fa-check-circle success-icon"></i>
-										<i class="fas fa-exclamation-circle failure-icon"></i>
+									<td ><input type="tel"
+										id="phone" name="Phone" class="entry" maxlength="10" placeholder="Enter your Phone Number"></input>
 										
-										<div class="error"></div>
 									</td>
 								</tr>
 								<tr class="tr-form">
@@ -204,23 +198,21 @@
 									<td class="form-label">Duration
 									<td>
 										<select class="select-box entry" name="duration" id="duration" class="entry">
-											<option value=" " selected disabled>Select Duration</option>
+											<option value=" " class="select-phold" selected disabled>Select Duration</option>
 											<option value="2-6">2-6 hrs
 											<option value="6-12">6-12 hrs
 											<option value="12-24">12-24 hrs
 											<option value="2-5d">2-5 days
 											<option value="1week">1 week and above
 										</select>
-										<i class="far fa-check-circle success-icon"></i>
-										<i class="fas fa-exclamation-circle failure-icon"></i>
-										<div class="error"></div>
+										
 									</td>						
 								</tr>
 								<tr class="tr-form">
 									<td class="form-label">Occasion
 									<td>
 										<select name="occasion" class="entry select-box" data-mate-select="active">
-											<option value=" " selected disabled>Select Occasion</option>
+											<option value=" " class="select-phold" selected disabled>Select Occasion</option>
 											
 											<optgroup label="Personal">Personal
 												<option value="Wedding">Wedding
@@ -240,7 +232,7 @@
 									<td class="form-label">Location
 									<td>
 										<select class="entry select-box" name="location" onchange="" onclick="return false;" id="location" data-mate-select="active">
-											<option value=" " selected disabled>Select Location</option>
+											<option value=" " class="select-phold" selected disabled>Select Location</option>
 											<option value="Chennai">Chennai
 											<option value="Podicherry">Podicherry
 											<option value="Bangalore">Bangalore
@@ -349,6 +341,54 @@
 					utilsScript:
 					"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 				});
+
+				$(".reset-form").click(function () {
+					window.alert("Form is reset successfully");
+				});
+				
+			});
+			$("#booking_form").submit(function(e) { 				
+			
+				
+				var name = document.forms.RegForm.Uname.value;
+				var email = document.forms.RegForm.Email.value;
+				var phone = document.forms.RegForm.Phone.value;
+				var details = document.forms.RegForm.Details.value;
+				var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; 
+				var regPhone=/^\d{10}$/;
+				var regName = /\d+$/g;	
+
+				if (name == "" || regName.test(name)) {
+					e.preventDefault();
+					window.alert("Please enter your name properly.");
+					name.focus();
+					return false;
+				}
+				
+				else if (email == "" || !regEmail.test(email)) {
+					e.preventDefault();
+					window.alert("Please enter a valid e-mail address.");
+					email.focus();
+					return false;
+				}
+				
+				else if (phone == "" || !regPhone.test(phone) || phone.length <10) {
+					e.preventDefault();
+					alert("Please enter valid phone number.");
+					phone.focus();
+					return false;
+				}
+				else if (details == "") {
+					e.preventDefault();
+					window.alert("Please enter your details");
+					address.focus();
+					return false;
+				}
+				else{
+					alert("Form submitted successfully!");
+				}
+				
+
 			});
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>

@@ -29,7 +29,7 @@
   }
   .place{
     float: left;
-    right: -7%;
+    right: -3%;
   }
   
 }
@@ -289,9 +289,11 @@ tbody{
   overflow: hidden;
 }
 .banner-text{
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
 	color:white;
 	/*font-weight:bold;*/
-	font-size:55px;
+	font-size:65px;
   font-weight: bolder;
 	position: absolute;
 	top: 40%;
@@ -308,20 +310,28 @@ tbody{
   position: relative;
 }
 .cont-text{
-  vertical-align: middle;
-  text-align: center;
-  align-items: center;
+  align-items: center !important;
+  text-align: center !important;
+  font-size: large;
+  filter: drop-shadow(1px 1px 2px gray);
 }
 .mail-whatsapp{
   /*background-color:  rgba(245, 222, 179,.3);*/
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 .mail-icon{
   width: 70px;
   display: inline-block;
 }
 .content-mail{
+  box-align: center;
+  margin: auto;
+  vertical-align: middle;
+  width: 80%;
+}
+.content-social{
   box-align: center;
   margin: auto;
   vertical-align: middle;
@@ -358,12 +368,16 @@ tbody{
   
 }
 .blink-text{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
 	animation: blinker 2s infinite;
+  color:brown;
 }
 @keyframes blinker {
 	60% {
-		opacity: 5%;
-		color: brown;
+		opacity: 10%;
+		color: teal;
 		}
 }
 /*-------FORM-------*/
@@ -371,6 +385,12 @@ tbody{
 {
   .entry, textarea{
     width:75%;
+  }
+}
+@media screen and (max-width:600px)
+{
+  .entry, textarea{
+    width:70%;
   }
 }
 .booking-form{
@@ -390,7 +410,7 @@ tbody{
   color: #7A1F1F;
 }
 .entry, textarea{
-  width:90%;
+  width:100% !important;
 }
 .entry{
 	height:70px;
@@ -411,6 +431,9 @@ td{
 }
 .entry::placeholder{
   font-family: 'Montserrat', sans-serif;
+}
+.select-phold{
+  font-family: 'Montserrat', sans-serif !important;
 }
 textarea{
 	resize:none;
@@ -532,9 +555,10 @@ input,textarea,select{
   border: 1px solid black;
   padding: 20px;
 }
-.entry:focus {
+.entry:focus ,textarea:focus{
   border: 3px solid brown;
   outline: none;
+  transition: border 0s;
 }
 #date-picker{
   font-family: FontAwesome,"Open Sans";
