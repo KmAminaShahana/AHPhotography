@@ -1,7 +1,7 @@
 /*--------PAGE LOADER SCREEN--------*/
 .load-div {
   background-color: #a52a2a;
-  height: 600%;
+  height: 1200%;
   width: 100%;
   position: absolute;
   align-items: center; 
@@ -14,7 +14,7 @@
 .load-text{
   color:white; 
   top: 0; 
-  margin-top: 30%; 
+  margin-top: 40%; 
   position: absolute; 
   font-family: 'Montserrat', sans-serif;
 }
@@ -483,6 +483,9 @@ tbody{
   .entry, textarea{
     width:60% !important;
   }
+  .form-label{
+    font-size: medium;
+  }
 }
 @media screen and (max-width:600px)
 {
@@ -620,7 +623,7 @@ textarea{
 	width:120px;
 	height:50px;
   border-radius:3px;
-  padding-right: 0px;
+  padding: 0px;
   background-color:#7A1F1F;
 	color:white;  
 }
