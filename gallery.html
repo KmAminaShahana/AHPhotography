@@ -8,10 +8,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">	
 	
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style1.css">
   <script type="text/javascript" src="script1.js"></script>
-
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -24,135 +24,162 @@
 </head>
 <body>
   <header>
-    <div>
-      <center>
-        <a href="index.html"><img src="images/Logo1.png" class="logo-menu"></a>
-      </center>			
-    </div>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-1">
-        <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Stories
-        </a>
-        <div class="dropdown-menu" >
-          <a class="dropdown-item" href="love.html">Love</a>
-          <a class="dropdown-item" href="joy.html">Joy</a>
-          <a class="dropdown-item" href="commitment.html">Dream</a>
-          <a class="dropdown-item" href="nature.html">Nature</a>
-          <a class="dropdown-item" href="newborn.html">New Born</a>
-          <a class="dropdown-item" href="travel.html">Travel</a>
-        </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      </div>
-    </nav>	
-  </header>
+		<div>
+			<center>
+				<a href="index.html"><img src="images/Logo1.png" class="logo-menu"></a>
+			</center>
+						
+		</div>
+		
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-1">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Stories
+				  </a>
+				  <div class="dropdown-menu" >
+					<a class="dropdown-item" href="love.html">Love</a>
+					<a class="dropdown-item" href="joy.html">Joy</a>
+					<a class="dropdown-item" href="commitment.html">Wedding</a>
+					<a class="dropdown-item" href="nature.html">Nature</a>
+					<a class="dropdown-item" href="newborn.html">New Born</a>
+					<a class="dropdown-item" href="travel.html">Travel</a>
+				  </div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="aboutus.html">About us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			  </ul>
+
+			  
+			</div>
+		</nav>
+
+	
+	</header>
 	
 	<!-- Gallery -->
   <main>
 	<section class="gallery">
-		<h1 style="font-family: 'Playfair Display', serif; font-weight: bold;"> GALLERY</h1>
+		<h1 style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 65px;">
+       Gallery</h1>
 	</section>
 <div class="row">
+  <div class="full-img" id="fullImgBox">
+		<img src="images/logo.png" id="fullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+  <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+    <video width="100%" loop class="video">
+      <source src="images/video1.mp4" type="video/mp4">
+      <source src="images/video1.ogg" type="video/ogg">
+    Your browser does not support the video tag.</video>
+  </div>
+  <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+    <video width="100%" loop class="video2">
+      <source src="images/video2.mp4" type="video/mp4">
+      <source src="images/video2.ogg" type="video/ogg">
+    Your browser does not support the video tag.</video>
+  </div>
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
       alt="Boat on Calm Water"
+      onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
       alt="Wintry Mountain Landscape"
+      onclick="openFullImg(this.src)"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
       alt="Mountains in the Clouds"
+      onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
       alt="Boat on Calm Water"
+      onclick="openFullImg(this.src)"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Waves at Sea" onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Yosemite National Park" onclick="openFullImg(this.src)"
     />
   </div>
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Boat on Calm Water" onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Wintry Mountain Landscape" onclick="openFullImg(this.src)"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Mountains in the Clouds" onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Boat on Calm Water" onclick="openFullImg(this.src)"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Waves at Sea" onclick="openFullImg(this.src)"
     />
 
     <img
       src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp""https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      class="w-100 shadow-1-strong rounded mb-4 gal-img"
+      alt="Yosemite National Park" onclick="openFullImg(this.src)"
     />
   </div>
 </div>
@@ -232,7 +259,39 @@
 
 
 	</footer>
+  <script>
+		
+		var fullImgBox=document.getElementById("fullImgBox");
+		var fullImg=document.getElementById("fullImg");
+		
+		function openFullImg(pic)
+		{
+			fullImgBox.style.display="flex";
+			fullImg.src=pic;
+		}
+		
+		function closeFullImg()
+		{
+			fullImgBox.style.display="none";
+		}
 
+        let clip = document.querySelector(".video")
+        clip.addEventListener("mouseover", function (e) {
+            clip.play();
+        })
+        clip.addEventListener("mouseout", function (e) {
+            clip.pause();
+        })
+
+        let clip2 = document.querySelector(".video2")
+        clip2.addEventListener("mouseover", function (e) {
+            clip2.play();
+        })
+        clip2.addEventListener("mouseout", function (e) {
+            clip2.pause();
+        })
+	
+		</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>

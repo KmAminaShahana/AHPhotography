@@ -370,6 +370,7 @@ button{
 	transform: scale(0.8) rotate(-15deg);
 	border-radius:20px;
 	box-shadow:0 32px 7px rgba(68,77,136,0.2);
+	transition: 1s ease-in-out;
 }
 
 .full-img
