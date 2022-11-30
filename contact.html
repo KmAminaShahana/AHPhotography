@@ -80,25 +80,6 @@
 					<img src="images/img51.jpg" class="img-fluid " alt="img">
 					
 					<h1 class="banner-text">Contact</h1>	
-					<!--
-					<table class="wa-mail">
-						<tr>
-						<td class="whatsapp">
-							<img src="images/whatsapp.png" class="mail-icon">
-						</td>
-						<td class="whatsapp">
-							<p class="cont-text">+919876543210, +918967452301</p>
-						</td>
-						<td></td>
-						<td class="mail">
-							<img src="images/gmail.png" class="mail-icon">
-						</td>
-						<td class="mail">
-							<p class="cont-text">ah.photography@gmail.com</p>
-						</td>
-						</tr>							
-					</table>
-					-->
 				</div>
 			</section>
 			
@@ -160,6 +141,7 @@
 					</div>
 				</div>
 				<div style="padding: 40px;"></div>
+				<div id="message" style="z-index: 997;"></div>
 				<div class="row" id="booking_form">
 					<div class="booking-img col-lg-5 col-md-12 col-sm-12 col-12">
 						<img src="images/img55.jpg" alt="Picture of a mountain covered in clouds" class="book-img">
@@ -255,7 +237,6 @@
 									</td>
 
 								</tr>
-								
 							</table>
 						</form>
 					</div>
@@ -335,6 +316,11 @@
 	
 		</footer>
 		<a href="contact.html#top"><input type="image" class="back-to-top hidden" name="BacktoTop" src="images/topbtn.png" /></a>
+		<div class="load-div">
+			<span class="loader"><span class="loader-inner"></span></span>
+			<h6 class="load-text">
+				- AH Photography -</h6>
+		</div>
 		<script>
 			$(document).ready(function(){
 				const phoneInputField = document.querySelector("#phone");
@@ -344,7 +330,7 @@
 				});
 
 				$(".reset-form").click(function () {
-					window.alert("Form is reset successfully");
+					window.alert("STARTOVER!\n\nForm is reset successfully...");
 				});
 				
 			});
@@ -361,32 +347,34 @@
 
 				if (name == "" || regName.test(name)) {
 					e.preventDefault();
-					window.alert("Please enter your name properly.");
+					window.alert("UH OH!!\n\nCan't submit the form without a valid name...");
 					name.focus();
 					return false;
 				}
 				
 				else if (email == "" || !regEmail.test(email)) {
 					e.preventDefault();
-					window.alert("Please enter a valid e-mail address.");
+					window.alert("UH OH!!\n\nWe need a valid E-MAIL to contact you...");
+
 					email.focus();
 					return false;
 				}
 				
 				else if (phone == "" || !regPhone.test(phone) || phone.length <10) {
 					e.preventDefault();
-					alert("Please enter valid phone number.");
+					alert("UH OH!!\n\nWe won't call you without prior notice. So Please enter valid phone number...");
 					phone.focus();
 					return false;
 				}
 				else if (details == "") {
 					e.preventDefault();
-					window.alert("Please enter your details");
+					window.alert("UH OH!!\n\nWe wouldn't know what to do unless you mention detailed info...");
 					address.focus();
 					return false;
 				}
 				else{
-					alert("Form submitted successfully!");
+					
+					alert("YAY!!\n\nYour Form has been submitted successfully... \nWE'LL CONTACT YOU SOON!!<3");
 				}
 				
 

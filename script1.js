@@ -1,4 +1,7 @@
 
+$(window).on("load",function(){
+	$(".load-div").fadeOut("slow");			
+});
 
 $(document).ready(function(){
 	
@@ -33,21 +36,10 @@ $(document).ready(function(){
 		},
 		autoclose: true
 	  
-	  }).on('changeDate', function(ev) {});
-			
-			
-		
-			
+	  }).on('changeDate', function(ev) {});			
 			/*
 			$(".submit-form").click(function () {
 				window.alert("Form is submitted successfully");
 				});
-			*/
-		
-			
-			
-			// Adding the submit event Listener
-
-			
-			
-		});
+			*/			
+});
