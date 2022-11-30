@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style1.css">
 	<script type="text/javascript" src="script1.js"></script>
+	<link rel="stylesheet" href="load.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +24,13 @@
 	
 </head>
 <body>
-	<header>
+	
+	<header id="top">
 		<div>
 			<center>
 				<a href="index.html"><img src="images/Logo1.png" class="logo-menu"></a>
-			</center>
-						
-		</div>
-		
+			</center>			
+		</div>		
 		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			
@@ -81,7 +81,7 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				
-				<div class="carousel-inner ">
+				<div class="carousel-inner" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="carousel-item active c-item">
 						<img src="images/Banner3.jpg" class="d-block w-100 c-img" alt="Friends Hanging out in the beach - Banner">
 						<div class="carousel-caption top-0 mt-4 ">
@@ -118,38 +118,38 @@
 
 		<section class="placeTiles">
 			<div class="row imgTiles" style="clear:both ;">
-				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img1.jpg" class="place-img">
+				<div class="place col-lg-4 col-md-6 col-sm-6 col-12 ">
+					<img src="images/img1.jpg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> KOLKATA </h3>
 					</div>
 				</div>
 				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img36.jpeg" class="place-img">
+					<img src="images/img36.jpeg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> MYSORE </h3>
 					</div>
 				</div>
 				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img6.jpg" class="place-img">
+					<img src="images/img6.jpg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> MUMBAI </h3>
 					</div>
 				</div>
 				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img8.jpg" class="place-img">
+					<img src="images/img8.jpg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> DELHI </h3>
 					</div>
 				</div>
 				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img35.jpeg" class="place-img">
+					<img src="images/img35.jpeg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> CHENNAI </h3>
 					</div>
 				</div>	
 				<div class="place col-lg-4 col-md-6 col-sm-6 col-12">
-					<img src="images/img11.jpg" class="place-img">
+					<img src="images/img11.jpg" class="place-img" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="layer">
 						<h3> KERALA </h3>
 					</div>
@@ -169,7 +169,7 @@
 
 		<section class="welcome">
 				<div class="main row">
-					<img src="images/img22.jpg" class="wel-img col-lg-6">
+					<img src="images/img22.jpg" class="wel-img col-lg-6" style="background-color: rgba(71, 143, 198,0.5);">
 					<div class="wel-text col-lg-6 col-md-8 col-sm-10 col-12">
 						<h4 class="homeText wel-text1">WELCOME!</h4>
 						<h5 class="homeText wel-text2">Oh Hey <span style="color:brown"> There! </span></h5><br><br>
@@ -313,10 +313,16 @@
 				
 			</div>
 		</div>
-
-
 	</footer>
-	
+	<a href="index.html#top"><input type="image" class="back-to-top hidden" name="BacktoTop" src="images/topbtn.png" /></a>
+	<div class="load-div">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	<script>
+		$(window).on("load",function(){
+			$(".load-div").fadeOut("slow");			
+		});
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
