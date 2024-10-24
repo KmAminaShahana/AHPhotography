@@ -3,7 +3,7 @@
 This project is a mock photography portfolio website developed using HTML5, CSS, JavaScript, jQuery, and Bootstrap. The purpose of this project was to create a responsive and visually appealing portfolio site showcasing photography work while following a structured UI/UX design process.
 
 The project is hosted on GitHub Pages and can be accessed here:
-https://harismithadevi.github.io/AHPhotography/
+https://kmaminashahana.github.io/AHPhotography/
 
 ### This project is part of my final project for the UI/UX core elective course in my MSc
 
